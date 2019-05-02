@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3001;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// if the node environment is in production, it will use the 'build' folder that was created during react deployment
+// if the node environment is in production, it will use the 'build' folder that was created during react deployment (runs as static files)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
@@ -23,7 +23,7 @@ app.use(routes);
 
 // set up connection to Mongoose which either connects to production or localhost environment
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/googlebooks",
+  process.env.MONGODB_URI || "mongodb://apUser:password1234@ds153304.mlab.com:53304/heroku_s34b9j2r",
   {
     useCreateIndex: true,
     useNewUrlParser: true
