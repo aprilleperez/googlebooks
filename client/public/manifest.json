@@ -13,3 +13,7 @@
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
+
+
+// MY NOTES
+// this file specifies basic frontend metadata (name/version) and extensions' functionality (bg/content scripts, browser actions). It installs web apps to the homescreen of a device
