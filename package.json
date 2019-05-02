@@ -25,3 +25,7 @@
     "mongoose": "^5.3.16"
   }
 }
+
+
+// MY NOTES
+// defines script commands and npm packages installed to be required in JS and server/database files
